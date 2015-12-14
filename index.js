@@ -8,7 +8,7 @@ var fs = require('fs')
 var noop = function() {}
 
 var join = function(root, dir) {
-  return path.join(root, path.resolve('/', dir))
+  return path.join(root, path.sep + dir)
 }
 
 var listen = function(stream, opts, cb) {
